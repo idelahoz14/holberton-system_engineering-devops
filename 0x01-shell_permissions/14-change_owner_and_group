@@ -1,2 +1,2 @@
 #!/bin/bash
---from=betty:holberton
+sudo chown -R betty:holberton
