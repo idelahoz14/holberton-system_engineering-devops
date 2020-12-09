@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Install nginx and change the default page
+
+apt -y update
+apt install -y nginx
+echo "Holberton School" > /var/www/html/index.html
+service nginx restart
