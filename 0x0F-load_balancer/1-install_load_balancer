@@ -8,7 +8,7 @@ echo "frontend firstbalance
           default_backend servers
 backend servers
     balance roundrobin
-    server 1776-web-01 35.243.206.188:80 check
-    server 1776-web-02 35.227.112.80:80 check
+    server 1902-web-01 34.74.119.103:80 check
+    server 1902-web-02 34.73.124.222:80 check
 " >> /etc/haproxy/haproxy.cfg
 service haproxy start
