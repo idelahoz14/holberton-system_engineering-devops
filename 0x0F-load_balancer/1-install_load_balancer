@@ -6,9 +6,9 @@ sudo sed -i 's/ENABLED=0/ENABLED=1/' /etc/default/haproxy
 echo "frontend firstbalance
           bind *:80
           default_backend servers
-backend servers
+backend back
     balance roundrobin
     server 1902-web-01 34.74.119.103:80 check
     server 1902-web-02 34.73.124.222:80 check
-" >> /etc/haproxy/haproxy.cfg
+" >> sudo tee -a /etc/haproxy/haproxy.cfg
 service haproxy start
