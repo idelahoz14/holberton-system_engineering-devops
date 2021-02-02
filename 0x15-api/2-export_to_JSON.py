@@ -16,8 +16,8 @@ if __name__ == "__main__":
 
     for task in tasks.json():
         lista.append(dict(task=task.get("title"),
-                           completed=task.get("completed"),
-                           username=name))
+                          completed=task.get("completed"),
+                          username=name))
 
     data = {argv[1]: lista}
 
